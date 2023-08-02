@@ -35,26 +35,6 @@ Field Programmable Gate Arrays (FPGAs) are fully reconfigurable hardware devices
 8. Bridging the Gap:
 The lecture emphasizes the challenge of bridging the gap between the increasing computational demands of AI benchmarks and the limitations of current hardware systems. The gap arises because the exponential growth in computational requirements cannot be matched by the saturation of performance density due to feature size scaling limitations. The goal is to efficiently accelerate AI benchmarks by employing various techniques, algorithms, and specialized hardware accelerators to achieve better performance and energy efficiency.
 
-Heterogeneous Computing:
-To overcome the limitations of traditional processors, modern systems adopt a heterogeneous computing approach. This involves dividing tasks between general-purpose processors, such as multi-core/single-core CPUs, and specialized accelerators. These accelerators are designed to handle data-parallel workloads, particularly those related to AI benchmarks. By distributing the workload across various processing units, the system can effectively harness the strengths of each component, leading to better performance and energy efficiency.
-
-Types of Accelerators:
-There are two prominent types of accelerators used in AI systems: ASICs and GPUs. ASICs (Application Specific Integrated Circuits) are highly specialized for specific AI benchmarks, making them extremely efficient for those tasks. On the other hand, GPUs (Graphics Processing Units) offer more flexibility and can accelerate a wide range of workloads, including AI tasks as well as graphics-intensive applications.
-
-Precision and Accuracy:
-The precision of computations has a direct impact on the accuracy of AI benchmarks. Higher precision, such as 32-bit floating-point, can lead to more accurate results but may also limit the compute density due to increased resource requirements. To strike a balance between accuracy and performance density, researchers employ mixed precision techniques, such as using 8-bit fixed-point and 32-bit floating-point computations. This optimization allows for better accuracy without compromising the overall computational efficiency.
-
-Tensor Cores:
-Tensor cores are specialized units found in modern GPUs designed specifically for accelerating matrix multiplications, a fundamental operation in deep neural network computations. These tensor cores significantly boost the throughput of AI benchmarks, especially those based on convolutional neural networks. By efficiently handling matrix operations, tensor cores enhance the overall performance of AI workloads.
-
-Sparsity:
-Sparsity refers to the presence of many parameters in a neural network that are close to zero and can be treated as zero. This phenomenon is common in deep neural networks. Modern GPUs equipped with tensor cores are capable of handling sparsity efficiently, leading to improved energy efficiency and higher throughput during AI computations.
-
-FPGA-based Accelerators:
-Field Programmable Gate Arrays (FPGAs) offer a fully reconfigurable hardware platform that can be programmed to emulate ASIC-based accelerators. FPGAs provide flexibility and customization, making them suitable for specific AI workloads. Researchers can configure the FPGA to meet the exact requirements of the task at hand, allowing for efficient acceleration of AI benchmarks.
-
-Bridging the Gap:
-The lecture emphasizes the gap between the exponential growth in computational requirements and the limitations imposed by feature size scaling. While AI benchmarks demand ever-increasing computational power, physical constraints hinder further improvements in performance density. Addressing this challenge requires innovative algorithmic and system-level approaches to efficiently accelerate AI workloads beyond current limitations.
 
 # The terms involved:
 
